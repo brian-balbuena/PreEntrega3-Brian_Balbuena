@@ -10,26 +10,26 @@
     <title>Document</title>
     <!-- favicon -->
     <!-- estilos  -->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- barra de navegacion -->
-    <section id="barranavegacion">
-        <div class="logomarca">
+    <nav class="barranavegacion">
+        <div id="logomarca">
             <img src="#" alt="logo">
         </div>
 
-        <ul>
-            <li>
+        <ul class="navegacion">
+            <li class="seccionnavbar">
                 <a href="#" target="_blank">Home</a>
             </li>
-            <li>
+            <li class="seccionnavbar">
                 <a href="#" target="_blank">Mi PLANta</a>
             </li>
-            <li>
+            <li class="seccionnavbar">
                 <a href="#" target="_blank">Cuidados</a>
-                <ul>
+                <ul class="colapso">
                     <li><a href="#">Interior</a></li>
                     <li><a href="#">Exterior</a></li>
                     <li><a href="#">Huerta</a></li>
@@ -39,11 +39,11 @@
                     <li><a href="#">Generales</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="seccionnavbar">
                 <a href="#" target="_blank">Plnatas</a>
-            <li>
+            <li class="seccionnavbar">
                 <a href="#">Interior</a>
-                <ul>
+                <ul class="colapso">
                     <li><a href="#">Suculentas</a></li>
                     <li><a href="#">Bulbosas</a></li>
                     <li><a href="#">Aromaticas</a></li>
@@ -56,54 +56,61 @@
                 </ul>
 
             </li>
-            <li>
+            <li class="seccionnavbar">
                 <a href="#">Exterior</a>
-                <ul>
+                <ul class="colapso">
                     <li>
                         <a href="#">Maceta</a>
-                        <ul>
+                        <ul class="colapso">
                             <li><a href="#">Deco</a></li>
                             <li><a href="#">Huerta</a></li>
-                            <li><hr></li>
+                            <li>
+                                <hr>
+                            </li>
                             <li><a href="#">Ver todas</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Tierra</a>
-                        <ul>
+                        <ul class="colapso">
                             <li><a href="#">Arboles</a></li>
                             <li><a href="#">Huerta</a></li>
                             <li><a href="#">Florales</a></li>
                             <li><a href="#">Trepadoras</a></li>
-                            <li><br>Ver todas</li>
+                            <li><br></li>
                         </ul>
                     </li>
-                    <li><hr></li>
+                    <li>
+                        <hr>
+                    </li>
                     <li><a href="#"> Ver todas</a></li>
                 </ul>
 
+
+            </li>
+            <li class="seccionnavbar">
+                <a href="#" target="_blank">Shop</a>
+            </li>
+            <li class="seccionnavbar">
+                <form>
+                    <input id="search" type="search" placeholder="Que buscas?...">
+                    <button type="submit">Buscar</button>
+                </form>
             </li>
         </ul>
-        </li>
-        <li>
-            <a href="#" target="_blank">Shop</a>
-        </li>
-        <form>
-            <input id="search" type="search" placeholder="Que buscas?...">
-            <button type="submit">Buscar</button>
-        </form>
-        </ul>
+       
 
-    </section>
+    </nav>
     <!-- nombre -->
     <section class="marca">
         <h1 id="titulo">Mi PLANta</h1>
-        <P>"Lorem, ipsum dolor sit amet consectetur adipisicing elit." </P> 
-    </section>
+        <P>"Lorem, ipsum dolor sit amet consectetur adipisicing elit." </P>
         <!-- visuales  -->
-    <div class="visulaA"></div>
-    <div class="visualB"></div>
-    <div class="visualC"></div>
+        <div id="visulaA"></div>
+        <div id="visualB"></div>
+        <div id="visualC"></div>
+    </section>
+
     <!-- scroll -->
     <section class="controlscroll">
         <div>
@@ -113,14 +120,17 @@
         </div>
     </section>
     <!-- mi planta -->
-    <section id="miplanta">
-        <div id="introduccion">
+    <section class="miplanta">
+        <div class="introduccion">
             <h3 id="titulomiplanta">Mi PLANta</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit veritatis itaque aut, facere facilis odio quisquam minima voluptate eum error.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit veritatis itaque aut,
+                facere facilis odio quisquam minima voluptate eum error.</p>
             <br>
 
             <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam delectus, qui optio ipsam perspiciatis neque laudantium laboriosam. Similique omnis odit nihil esse et neque magnam nesciunt! Reprehenderit a vel maxime.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam delectus, qui optio ipsam
+                    perspiciatis neque laudantium laboriosam. Similique omnis odit nihil esse et neque magnam nesciunt!
+                    Reprehenderit a vel maxime.</p>
 
                 <button type="submit" id="botonmiplanta">Buscar mi planta</button>
             </div>
