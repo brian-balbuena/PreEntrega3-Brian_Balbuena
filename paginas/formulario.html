@@ -1,56 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-      <!-- meta -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- titulo -->
-      <title>Document</title>
-      <!-- favicon -->
-      <!-- bootstrap  -->
-      <!-- css  -->
-      <link rel="stylesheet" href="./stylesform.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Chathura:wght@300&family=Open+Sans:ital@1&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
-    
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo -->
+  <title>Document</title>
+  <!-- favicon -->
+  <!-- bootstrap  -->
+  <!-- css  -->
+  <link rel="stylesheet" href="./stylesform.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Chathura:wght@300&family=Open+Sans:ital@1&family=Roboto+Mono:ital,wght@1,100&display=swap"
+    rel="stylesheet">
+
 </head>
+
 <body>
+  <!-- barra de navegacion -->
+  <nav class="barranavegacion">
+    <div id="logomarca">
+      <img src="#" alt="logo">
+    </div>
+
+    <ul>
+      <li>
+        <a href="#" target="_blank">Home</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Mi PLANta</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Cuidados</a>
+        <ul>
+          <li><a href="#">Interior</a></li>
+          <li><a href="#">Exterior</a></li>
+          <li><a href="#">Huerta</a></li>
+          <li>
+            <hr>
+          </li>
+          <li><a href="#">Generales</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" target="_blank">Plnatas</a>
+      <li>
+        <a href="#">Interior</a>
+        <ul>
+          <li><a href="#">Suculentas</a></li>
+          <li><a href="#">Bulbosas</a></li>
+          <li><a href="#">Aromaticas</a></li>
+          <li><a href="#">Trepadoras</a></li>
+          <li><a href="#">Acuaticas</a></li>
+          <li>
+            <hr>
+          </li>
+          <li><a href="#"> Ver todas</a></li>
+        </ul>
+
+      </li>
+      <li>
+        <a href="#">Exterior</a>
+        <ul>
+          <li>
+            <a href="#">Maceta</a>
+            <ul>
+              <li><a href="#">Deco</a></li>
+              <li><a href="#">Huerta</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a href="#">Ver todas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Tierra</a>
+            <ul>
+              <li><a href="#">Arboles</a></li>
+              <li><a href="#">Huerta</a></li>
+              <li><a href="#">Florales</a></li>
+              <li><a href="#">Trepadoras</a></li>
+              <li><br></li>
+            </ul>
+          </li>
+          <li>
+            <hr>
+          </li>
+          <li><a href="#"> Ver todas</a></li>
+        </ul>
+
+      </li>
+    </ul>
+    </li>
+    <li>
+      <a href="#" target="_blank">Shop</a>
+    </li>
+    <form>
+      <input id="search" type="search" placeholder="Que buscas?...">
+      <button type="submit">Buscar</button>
+    </form>
+    </ul>
+
+  </nav>
+
   <section class="textform">
     <div class="titulo">
       <h3>Mi PLANta</h3>
     </div>
     <div class="expliform">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum veniam modi molestiae libero in ipsam perferendis eaque beatae similique tempora rem odit temporibus aperiam dicta, illo, aspernatur quam facere.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum veniam modi molestiae libero in
+        ipsam perferendis eaque beatae similique tempora rem odit temporibus aperiam dicta, illo, aspernatur quam
+        facere.</p>
     </div>
   </section>
-
+  <!-- cuerpo del formulario  -->
   <form>
-    <label for="nombre" >Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre.." required> 
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre.." required>
     <br>
-    <label for="edad" >Edad</label>
-    <input type="number" id="edad" name="edad" placeholder="Edad.." required> 
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" placeholder="Edad.." required>
     <br>
-    <label for="edad" >Mail</label>
+    <label for="edad">Mail</label>
     <input type="email" id="mail" name="mail" placeholder="Mail.." required>
     <br>
-    <label for="casa">Casa</label> 
+    <label for="casa">Casa</label>
     <input type="radio" id="casa" name="casa" value="Car">
     <label for="casa">Departamento</label>
     <input type="radio" id="casa" name="casa" value="Boat">
     <br>
-    <label for="ubi">Interior</label> 
+    <label for="ubi">Interior</label>
     <input type="radio" id="ubi" name="ubi">
     <label for="casa">Exterior</label>
     <input type="radio" id="ubi" name="ubi">
     <br>
-    <label for="interes">Huerta</label> 
+    <label for="interes">Huerta</label>
     <input type="radio" id="interes" name="interes">
     <label for="casa">Deco</label>
     <input type="radio" id="interes" name="interes">
     <br>
-    <label for="estacion">Verano</label> 
+    <label for="estacion">Verano</label>
     <input type="radio" id="estacion" name="estacion">
     <label for="estacion">Otoño</label>
     <input type="radio" id="estacion" name="estacion">
@@ -61,9 +153,10 @@
     <br>
     <label for="comentario">Comentario.</label>
     <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje un comentario.."></textarea>
-    
+
     <button type="submit"> Enviar</button>
 
-  </form> 
+  </form>
 </body>
+
 </html>

@@ -1,3 +1,16 @@
+/* general */
+
+body {
+    position: relative;
+    width: 100%;
+    height: 1400px;
+    background-image: linear-gradient(5deg, #ffffe4 0,
+     #f2f5cf 25%, #dae2b6 50%, #c1d09f 75%, #aac18d 100%);
+  
+
+
+}
+
 
 /* barra de navegacion  */
 .barranavegacion {
@@ -22,7 +35,8 @@
     position: absolute;
     left: 0%;
 }
-.seccionnavbar{
+
+.seccionnavbar {
     display: inline;
     margin: 10px;
 }
@@ -31,8 +45,177 @@
     display: none;
 }
 
-.seccionnavbar:hover .colapso {
+/* .seccionnavbar:hover .colapso {
     position: absolute;
     display: inline;
-    background-color: aqua;
+    left: 20%;
+    background-color: #AAA492;
+    opacity: .7;
+    z-index: 2;
+} */
+
+a {
+    text-decoration: none;
 }
+
+.seccionnavbar:hover #navcuidados{
+    position: absolute;
+    display: inline;
+    width: 80px;
+    
+    left: 30%;
+    top: 65%;
+    background-color: #AAA492;
+    list-style-type: none;
+    border-radius: 20px;
+    opacity: .7;
+    z-index: 2;
+
+}
+
+/* hero  */
+
+#hero {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* nombre  */
+
+.marca {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 92%;
+}
+
+.nommarca {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 53%;
+    height: 50%;
+    top: 20%;
+    left: 18%;
+    margin: auto;
+
+}
+
+#titulo {
+    display: inline;
+    font-size: 10rem;
+}
+
+#parrafonombre {
+    display: inline;
+    margin: 26%
+}
+
+/* scroll  */
+.controlscroll {
+    position: absolute;
+    display: inline;
+    width: 70px;
+    height: 70px;
+    top: 90%;
+    left: 47.25%;
+}
+
+#scroll {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#imgscroll {
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+.textscroll {
+    position: relative;
+    display: inline;
+    bottom: 130%;
+    left: 20%;
+    font-size: 1.2rem;
+}
+
+.textscroll::before {
+    content: "";
+    position: absolute;
+    display: inline;
+    width: 2px;
+    height: 37px;
+    top: 19%;
+    left: 47%;
+    transform: rotate(90deg);
+    background-color: black;
+}
+
+
+/* mi plnata  */
+
+.miplanta {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 48%;
+    top: 53%;
+    background-image: linear-gradient(5deg, #ffffe4 0,
+     #f2f5cf 25%, #dae2b6 50%, #c1d09f 75%, #aac18d 100%);
+    /* background-color: #CCD6A6; */
+    border-top: solid 1px black;
+    opacity: .9;
+}
+
+.introduccion {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#titulomiplanta {
+    position: absolute;
+    display: inline;
+    font-size: 5rem;
+    top: 8%;
+    margin: auto;
+    right: 34%;
+}
+
+#textmiplanta {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 60%;
+    left: 20%;
+    top: 21%;
+    z-index: 1;
+    color: black;
+}
+
+
+/* boton miplanta  */
+#botonmiplanta {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    ;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#botonmiplanta:hover {
+    color: #AAA492;
+}
+
