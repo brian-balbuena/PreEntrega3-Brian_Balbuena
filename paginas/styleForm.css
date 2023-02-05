@@ -1,0 +1,74 @@
+
+body {
+    height: 1200px;
+}
+
+
+
+.textform {
+    position: relative;
+    display: block;
+    height: 200px;
+    text-align: center;
+}
+
+#tituloform {
+    font-size: 4rem;
+}
+.expliform {
+    padding: 0% 15% 0% 15%;
+}
+
+form {
+    position: relative;
+    display: inline-block;
+    top:0%;
+    padding: 5% 10% 5% 10%;
+    left: 24%;
+    height: 500px;
+    text-align: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+textarea{
+    display: block;
+    position: relative;
+    margin-left: 6%;
+}
+
+button {
+    position: relative;
+    top: 5%;
+}
+
+/* visuales  */
+
+.visualform {
+    position: absolute;
+    display: inline;
+    bottom: 58%;
+    right: 101%;
+    z-index: -1;
+    opacity: .6;
+}
+#fondoAform {
+    position: absolute;
+    height: 700px;
+    width: 500px;
+}
+
+.visualformA {
+    position: absolute;
+    display: inline;
+    bottom: 66%;
+    left: 60%;
+    z-index: -1;
+    opacity: .6;
+}
+#fondoBform {
+    position: absolute;
+    display: inline;
+    height: 800px;
+    width: 550px;
+    padding-top: 0px;
+}
