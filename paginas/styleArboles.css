@@ -1,0 +1,119 @@
+
+.nomarboles {
+    position: fixed;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 720px;
+    top: 8px;
+}
+
+/* arboles  */
+
+.arboles {
+    position: relative;
+    display: block;
+    height: 4500px;
+    width: 100%;
+    top: 55%;
+}
+
+.headarboles {
+    position: sticky;
+    top: 28%;
+    height: 529px;
+    opacity: .9;
+    font-size: .8rem;
+    border-top: solid black 2px;
+    color: black;
+    background-color: #ffffe4;
+    z-index: 1;
+} 
+
+/* scroll arboles  */
+
+ .controlscroll {
+    position: absolute;
+    display: inline-block;
+    top: 90%;
+    left: 47.4%;
+}
+.imgScroll {
+    height: 50px;
+    width: 50px;
+}
+ .textscrollArbol{
+    margin: 0;
+}
+#scrollB {
+    top: 89%;
+}
+
+
+/* galeria  */
+
+.galeriaArboles {
+    position: absolute;
+    display: inline-block;
+    opacity: .9;
+   top: 20%;
+    z-index: 2;
+}
+
+ /* tarjetas */
+ .imgArboles {
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+.badge {
+    padding: 2px;
+    border: solid 2px black;
+    border-radius: 50px;
+}
+
+.tituloskill {
+    margin: 10px 0 10px 0;
+}
+.skillsArboles {
+text-align: center;
+}
+
+.frente h6 {
+    margin: 10px 50px 20px 50px;
+    font-size: 1rem;
+    text-align: center;
+}
+.tarjetaArboles {
+    position: absolute;
+    display: block;
+    height: 500px;
+    border: solid black 2px ;
+    border-radius: 15px;
+    background-color: #ffffe4;
+}
+
+
+#tarjetaA {
+left: 500px;
+}
+#tarjetaB {
+    top: 600px;
+    left: 150px;
+}
+#tarjetaC {
+    top: 1200px;
+    left: 300px;
+}
+#tarjetaD {
+    top: 1800px;
+    left: 600px;
+}
+#tarjetaE {
+    top: 2400px;
+    left: 800px;
+}
+#tarjetaF {
+    top: 3000px;
+    left: 300px;
+}
