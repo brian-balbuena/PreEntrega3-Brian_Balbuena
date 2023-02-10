@@ -2,11 +2,22 @@
 
 .nomsuculentas {
     position: fixed;
-    display: block;
-    text-align: center;
+    display: grid;
     width: 100%;
-    height: 720px;
-    
+    height: 100%;
+    grid-template-rows: 70px 1fr 100px ;
+    grid-template-columns: 1fr 55% 1fr;
+}
+
+#tituloSuculentas {
+    position: relative;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 
@@ -45,13 +56,18 @@
     color: black;
     background-color: #ffffe4;
     z-index: 1;
+    padding: 10px 20px 0 20px;
 } 
 
 .galeriasuculentas {
     position: absolute;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 3000px;
+    width: 100%;
     opacity: .9;
-   top: 20%;
+    top: 20%;
     z-index: 2;
 }
 
@@ -84,64 +100,86 @@ text-align: center;
 }
 /* ***************** */
 #tarjetaA {
-    position: absolute;
-    display: block;
+    /* position: absolute; */
+    /* display: block; */
     height: 500px;
-    border: solid black 2px ;
+    border: solid black 2px;
     border-radius: 15px;
     background-color: #ffffe4;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* align-items: center; */
+    align-self: center;
+    justify-self: center;
 }
 
+
 #tarjetaB {
-    position: absolute;
-    display: block;
+    /* position: absolute; */
+    /* display: block; */
     height: 500px;
-    border: solid black 2px ;
+    border: solid black 2px;
     border-radius: 15px;
-    top: 110%;
-    left: 50%;
+    /* top: 110%; */
+    /* left: 50%; */
     background-color: #ffffe4;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
 }
 
 #tarjetaC {
-    position: absolute;
-    display: block;
+    /* position: absolute;
+    display: block; */
     height: 500px;
     border: solid black 2px ;
     border-radius: 15px;
-    top: 219%;
-    left: 100%;
+    /* top: 219%;
+    left: 100%; */
     background-color: #ffffe4;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    
 }
 #tarjetaD {
-    position: absolute;
-    display: block;
     height: 500px;
     border: solid black 2px ;
     border-radius: 15px;
-    top: 329%;
-    left: 150%;
+    /* top: 329%;
+    left: 150%; */
     background-color: #ffffe4;
+    grid-column: 4/5;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
 }
 #tarjetaE {
-    position: absolute;
-    display: block;
     height: 500px;
     border: solid black 2px ;
     border-radius: 15px;
-    top: 439%;
-    left: 200%;
+    /* top: 439%;
+    left: 200%; */
     background-color: #ffffe4;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
 }
 
  #tarjetaF {
-    position: relative;
-    display: inline-block;
+    /* position: relative;
+    display: inline-block; */
     height: 500px;
-    left: 38%;
     border: solid black 2px;
     border-radius: 15px;
-    top: 2761px;
-    left: 250%;
+    /* top: 2761px;
+    left: 250%; */
     background-color: #ffffe4;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
 }  

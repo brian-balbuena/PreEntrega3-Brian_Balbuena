@@ -1,11 +1,21 @@
-
 .nomarboles {
     position: fixed;
-    display: block;
-    text-align: center;
+    display: grid;
     width: 100%;
-    height: 720px;
-    top: 8px;
+    height: 100%;
+    grid-template-rows: 70px 1fr 100px;
+    grid-template-columns: 1fr 55% 1fr;
+}
+
+#tituloArboles {
+    position: relative;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 /* arboles  */
@@ -28,23 +38,26 @@
     color: black;
     background-color: #ffffe4;
     z-index: 1;
-} 
+}
 
 /* scroll arboles  */
 
- .controlscroll {
+.controlscroll {
     position: absolute;
     display: inline-block;
     top: 90%;
     left: 47.4%;
 }
+
 .imgScroll {
     height: 50px;
     width: 50px;
 }
- .textscrollArbol{
+
+.textscrollArbol {
     margin: 0;
 }
+
 #scrollB {
     top: 89%;
 }
@@ -54,18 +67,23 @@
 
 .galeriaArboles {
     position: absolute;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 3000px;
+    width: 100%;
     opacity: .9;
-   top: 20%;
+    top: 20%;
     z-index: 2;
 }
 
- /* tarjetas */
- .imgArboles {
+/* tarjetas */
+.imgArboles {
     height: 250px;
     width: 250px;
     border-radius: 15px;
 }
+
 .badge {
     padding: 2px;
     border: solid 2px black;
@@ -75,45 +93,118 @@
 .tituloskill {
     margin: 10px 0 10px 0;
 }
+
 .skillsArboles {
-text-align: center;
+    text-align: center;
+    
 }
 
 .frente h6 {
-    margin: 10px 50px 20px 50px;
-    font-size: 1rem;
+    margin: 10px 50px 10px 50px;
+    font-size: 1.2rem;
     text-align: center;
 }
+
 .tarjetaArboles {
     position: absolute;
     display: block;
-    height: 500px;
-    border: solid black 2px ;
+    /* height: 500px; */
+    border: solid black 2px;
     border-radius: 15px;
     background-color: #ffffe4;
 }
 
 
 #tarjetaA {
-left: 500px;
+    height: 500px;
+    overflow: hidden;
+    transition: all 3s;   
+    border: solid black 2px;
+    border-radius: 15px;
+    background-color: #ffffe4;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    /* align-items: center; */
+    align-self: center;
+    justify-self: center;
 }
+
+
 #tarjetaB {
-    top: 600px;
-    left: 150px;
+   /* position: absolute; */
+    /* display: block; */
+    height: 500px;
+    border: solid black 2px;
+    border-radius: 15px;
+    /* top: 110%; */
+    /* left: 50%; */
+    background-color: #ffffe4;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
 }
+
 #tarjetaC {
-    top: 1200px;
-    left: 300px;
+     /* position: absolute;
+    display: block; */
+    height: 500px;
+    border: solid black 2px ;
+    border-radius: 15px;
+    /* top: 219%;
+    left: 100%; */
+    background-color: #ffffe4;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
 }
+
 #tarjetaD {
-    top: 1800px;
-    left: 600px;
+    height: 500px;
+    border: solid black 2px ;
+    border-radius: 15px;
+    /* top: 329%;
+    left: 150%; */
+    background-color: #ffffe4;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
 }
+
 #tarjetaE {
-    top: 2400px;
-    left: 800px;
+    height: 500px;
+    border: solid black 2px ;
+    border-radius: 15px;
+    /* top: 439%;
+    left: 200%; */
+    background-color: #ffffe4;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
 }
+
 #tarjetaF {
-    top: 3000px;
-    left: 300px;
+        /* position: relative;
+    display: inline-block; */
+    height: 500px;
+    border: solid black 2px;
+    border-radius: 15px;
+    /* top: 2761px;
+    left: 250%; */
+    background-color: #ffffe4;
+    grid-column: 3/4;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
 }
+
+
+
+
+
+
+
+

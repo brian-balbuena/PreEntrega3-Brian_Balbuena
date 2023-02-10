@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(5deg, #ffffe4 0,
             #f2f5cf 25%, #dae2b6 50%, #c1d09f 75%, #aac18d 100%);
     font-family: 'Roboto Mono', monospace;
-
+    margin: 0;
 
 }
 
@@ -15,25 +15,26 @@ body {
 /* barra de navegacion  */
 .barranavegacion {
     position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    padding-top: 15px;
-    z-index: 5;
+    display: flex;
+    grid-column: 1/4;
+    justify-content: end;
+    height: 100%;
+     z-index: 5;
 
 }
 
 .navegacion {
     position: absolute;
     display: inline-block;
-    bottom: 22%;
+    bottom: 20%;
     right: 0%;
 }
 
 
 #logomarca {
     position: absolute;
-    left: 0%;
+    left: 2%;
+    top: 30%;
 }
 
 .seccionnavbar {

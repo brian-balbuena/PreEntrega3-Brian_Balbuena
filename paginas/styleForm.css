@@ -1,18 +1,27 @@
 
 body {
-    height: 1200px;
+    display: grid;
+    /* width: 100%; */
+    height: 1100px;
+    grid-template-rows: 70px 20% 73%;
+    grid-template-columns: 1fr 55% 1fr;
 }
 
 
 
 .textform {
-    position: relative;
-    display: block;
-    height: 200px;
+    /* position: relative; */
+    /* display: block; */
+    /* height: 200px; */
+    grid-row: 2/3;
+    grid-column: 2/3;
+    /* justify-self: end; */
+    align-self: end;
     text-align: center;
 }
 
 #tituloform {
+    margin: 0;
     font-size: 4rem;
 }
 .expliform {
@@ -21,24 +30,33 @@ body {
 
 form {
     position: relative;
-    display: inline-block;
-    top:0%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    /* display: inline-block; */
+    /* top: 0%; */
+    width: 500px;
     padding: 5% 10% 5% 10%;
-    left: 24%;
-    height: 500px;
+    /* left: 24%; */
+    /* height: 500px; */
     text-align: center;
     /* border: 2px solid black; */
     border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
 }
-textarea{
-    display: block;
-    position: relative;
-    margin-left: 6%;
+
+#contcomen {
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 button {
     position: relative;
     top: 5%;
+    
 }
 
 /* visuales  */
@@ -46,7 +64,7 @@ button {
 .visualform {
     position: absolute;
     display: inline;
-    bottom: 58%;
+    bottom: 69%;
     right: 101%;
     z-index: -1;
     opacity: .6;
@@ -60,8 +78,8 @@ button {
 .visualformA {
     position: absolute;
     display: inline;
-    bottom: 66%;
-    left: 60%;
+    bottom: 73%;
+    left: 62%;
     z-index: -1;
     opacity: .6;
 }
