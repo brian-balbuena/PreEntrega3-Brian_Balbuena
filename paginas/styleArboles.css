@@ -203,6 +203,60 @@
 
 
 
+/* visual  */
+
+#visualBA {
+    position: absolute;
+    display: inline;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 400px;
+    height: 500px;
+    top: 25%;
+    right: 66%;
+}
+   
+#imgVisualArbol {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+#visualBB {
+    position: absolute;
+    display: inline-block;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    top: 36%;
+    right: 108%;
+    height: 220px;
+    width: 116px;
+    background-color: #C9F4AA;
+    opacity: .5;
+    border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+    transform: rotate(50deg);
+    animation: moveimg 3s ease infinite;
+}
+
+@keyframes moveimg {
+    0% {
+        border-radius: 34% 64% 77% 26% / 
+        73% 54% 45% 19%;
+    }
+
+    50% {
+        border-radius: 75% 31% 40% 71% / 
+        83% 44% 76% 61%;
+        transform: rotate(40deg);
+        
+    }
+    
+    100% {
+        border-radius: 34% 64% 77% 26% / 
+        73% 54% 45% 19%;
+    }
+}
 
 
 

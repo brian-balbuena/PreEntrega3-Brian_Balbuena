@@ -39,6 +39,7 @@
     display: inline-block;
     top: 90%;
     left: 47.4%;
+    opacity: .2;
 }
 #scrollsucu {
     height: 50px;
@@ -183,3 +184,58 @@ text-align: center;
     justify-self: center;
     align-self: center;
 }  
+
+
+/* visual  */
+
+#visualAA {
+    position: absolute;
+    display: inline;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 150px;
+    height: 200px;
+    top: 22%;
+    left: 140%;
+}    
+#imgVisualSucu {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+#visualAB {
+    position: absolute;
+    display: inline-block;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    top: 26%;
+    left: 153%;
+    height: 132px;
+    width: 80px;
+    background-color: #F8C4B4;
+    opacity: .5;
+    border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+    transform: rotate(50deg);
+    animation: moveimg 3s ease infinite;
+}
+
+@keyframes moveimg {
+    0% {
+        border-radius: 34% 64% 77% 26% / 
+        73% 54% 45% 19%;
+    }
+
+    50% {
+        border-radius: 75% 31% 40% 71% / 
+        83% 44% 76% 61%;
+        transform: rotate(40deg);
+        
+    }
+    
+    100% {
+        border-radius: 34% 64% 77% 26% / 
+        73% 54% 45% 19%;
+    }
+}

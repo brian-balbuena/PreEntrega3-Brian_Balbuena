@@ -28,6 +28,8 @@ body {
     display: inline-block;
     bottom: 20%;
     right: 0%;
+    color: black;
+   
 }
 
 
@@ -57,102 +59,29 @@ a {
     text-decoration: none;
 }
 
-/* colapso cuidados  */
-.seccionnavbar:hover #navcuidados {
+
+/* colapso plantas  */
+.seccionnavbar:hover #navPlanta {
     position: absolute;
-    display: inline;
-    width: 100px;
-    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 60px;
     left: 32%;
     top: 80%;
     background-color: #AAA492;
     list-style-type: none;
     border-radius: 20px;
     opacity: .7;
-    z-index: 5;
-    text-align: center;
-    padding: 0;
-
-}
-
-
-/* colapso interior  */
-
-.seccionnavbar:hover #navinterior {
-    position: absolute;
-    display: inline;
-    width: 120px;
-    height: 150px;
-    left: 43%;
-    top: 80%;
-    background-color: #AAA492;
-    list-style-type: none;
-    border-radius: 20px;
-    opacity: .7;
     z-index: 2;
     text-align: center;
     padding: 0;
-
 }
 
-/* colapso exterior  */
-.seccionnavbar:hover #navext {
-    position: absolute;
-    display: inline;
-    width: 100px;
-    height: 90px;
-    left: 55%;
-    top: 80%;
-    background-color: #AAA492;
-    list-style-type: none;
-    border-radius: 20px;
-    opacity: .7;
-    z-index: 2;
-    text-align: center;
-    padding: 0;
-
+#navPlanta li {
+    padding: 0 3px 0 3px;
+    
 }
-
-
-.colapsoInterior {
-    display: none;
-}
-
-.seccionExt:hover #navColapMaceta {
-    position: absolute;
-    display: inline;
-    width: 100px;
-    height: 90px;
-    left: 100%;
-    top: 0%;
-    background-color: #AAA492;
-    list-style-type: none;
-    border-radius: 20px;
-    opacity: .7;
-    z-index: 2;
-    text-align: center;
-    padding: 0;
-
-}
-
-.seccionExt:hover #navColapTierra {
-    position: absolute;
-    display: inline;
-    width: 100px;
-    height: 130px;
-    left: 100%;
-    top: 0%;
-    background-color: #AAA492;
-    list-style-type: none;
-    border-radius: 20px;
-    opacity: .7;
-    z-index: 2;
-    text-align: center;
-    padding: 0;
-
-}
-
-
 
 /* titulos y subtitulos secciones  */
 
@@ -163,4 +92,43 @@ a {
 
 .subtituloseccion {
     font-size: 2.5rem;
+}
+
+/* footer  */
+
+footer {
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: end;
+    bottom: 74%;
+}
+
+#iconosFooter {
+
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    
+}
+
+
+#iconosFooter img {
+    height: 30px;
+    width: 30px;
+    opacity: .2;
+    border: solid black 2px;
+    border-radius: 50%;
+    padding: 12%;
+}
+
+.visualE {
+    position: absolute;
+    display: inline;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 2px;
+    width: 120.6%;
+    background-color: black;
+    opacity: .2;
 }
