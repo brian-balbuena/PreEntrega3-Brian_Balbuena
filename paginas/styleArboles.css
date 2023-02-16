@@ -95,8 +95,15 @@
 }
 
 .skillsArboles {
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frente {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .frente h6 {
@@ -107,7 +114,8 @@
 
 .tarjetaArboles {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     /* height: 500px; */
     border: solid black 2px;
     border-radius: 15px;
@@ -262,3 +270,20 @@
 
 
 
+
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+
+    .galeriaArboles {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+
+    #tarjetaA {
+        grid-column: 1/2;
+    }
+
+}

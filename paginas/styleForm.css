@@ -10,13 +10,8 @@ body {
 
 
 .textform {
-    /* position: relative; */
-    /* display: block; */
-    /* height: 200px; */
     grid-row: 2/3;
     grid-column: 2/3;
-    /* justify-self: end; */
-    align-self: end;
     text-align: center;
 }
 
@@ -63,11 +58,11 @@ button {
 
 .visualform {
     position: absolute;
-    display: inline;
-    bottom: 69%;
-    right: 101%;
+    bottom: 87%;
+    grid-column: 1/2;
+    grid-row: 3/4;
     z-index: -1;
-    opacity: .6;
+    opacity: .5;
 }
 #fondoAform {
     position: absolute;
@@ -77,16 +72,46 @@ button {
 
 .visualformA {
     position: absolute;
-    display: inline;
+    grid-column: 3/4;
+    grid-column: 2/3;
     bottom: 73%;
-    left: 62%;
+    right: 40%;
     z-index: -1;
-    opacity: .6;
+    opacity: .5;
 }
 #fondoBform {
     position: absolute;
     display: inline;
     height: 800px;
-    width: 550px;
+    width: 600px;
     padding-top: 0px;
+}
+
+
+
+
+
+
+/* media queries  */
+
+@media screen and (max-width: 768px) {
+  
+    #tituloform {
+        font-size: 3rem
+    }
+    .expliform {
+        padding: 0;
+    }
+    form {
+        width: 80%;
+    }
+   
+    /* visual  */
+
+    .visualformA {
+        display: none;
+    }
+
+
+
 }
