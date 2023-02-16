@@ -19,7 +19,7 @@ body {
     grid-column: 1/4;
     justify-content: end;
     height: 100%;
-     z-index: 5;
+    z-index: 5;
 
 }
 
@@ -29,7 +29,7 @@ body {
     bottom: 20%;
     right: 0%;
     color: black;
-   
+
 }
 
 
@@ -65,7 +65,7 @@ a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     height: 60px;
     left: 32%;
     top: 80%;
@@ -80,18 +80,20 @@ a {
 
 #navPlanta li {
     padding: 0 3px 0 3px;
-    
+
 }
 
 /* titulos y subtitulos secciones  */
 
 .tituloseccion {
     font-size: 4rem;
+    margin: 20px 0 20px 0;
 
 }
 
 .subtituloseccion {
     font-size: 2.5rem;
+    margin: 20px 0 20px 0;
 }
 
 /* footer  */
@@ -105,11 +107,9 @@ footer {
 }
 
 #iconosFooter {
-
     display: flex;
     width: 200px;
     justify-content: space-around;
-    
 }
 
 

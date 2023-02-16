@@ -1,3 +1,5 @@
+
+
 .nomarboles {
     position: fixed;
     display: grid;
@@ -8,11 +10,10 @@
 }
 
 #tituloArboles {
-    position: relative;
-    /* display: block; */
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -43,10 +44,10 @@
 /* scroll arboles  */
 
 .controlscroll {
-    position: absolute;
-    display: inline-block;
-    top: 90%;
-    left: 47.4%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: center;
+    opacity: .2;
 }
 
 .imgScroll {
@@ -59,7 +60,11 @@
 }
 
 #scrollB {
-    top: 89%;
+    display: inline;
+    position: absolute;
+    left: 48%;
+    top: 90%;
+    opacity: .4;
 }
 
 
@@ -74,6 +79,7 @@
     width: 100%;
     opacity: .9;
     top: 20%;
+    row-gap: 200px;
     z-index: 2;
 }
 
@@ -216,12 +222,13 @@
 #visualBA {
     position: absolute;
     display: inline;
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     width: 400px;
     height: 500px;
+    align-self: end;
+    justify-self: end;
     top: 25%;
-    right: 66%;
 }
    
 #imgVisualArbol {
@@ -233,11 +240,13 @@
 
 #visualBB {
     position: absolute;
-    display: inline-block;
-    grid-column: 3/4;
+    display: inline;
+    grid-column: 2/3;
     grid-row: 2/3;
-    top: 36%;
-    right: 108%;
+    align-self: center;
+    justify-self: end;
+    top: 35%;
+    right: 17%;
     height: 220px;
     width: 116px;
     background-color: #C9F4AA;
@@ -277,13 +286,87 @@
 
 @media screen and (max-width: 768px) {
 
+
+    .nomarboles {
+        grid-template-rows: 81px 1fr;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    #tituloArboles {
+        justify-content: start;
+    }
+    
+
+    /* scrool  */
+    .controlscroll {
+        grid-row: 2/3;
+        align-self: end;
+    }
+    /* footer  */
+    footer {
+        position: static;
+        width: 43px;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        align-self: end;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+    
+    #iconosFooter {
+        flex-direction: column;
+        width: 40px;
+    }
+
+    /* arboles  */
+    .headarboles {
+        top: 0%;
+        height: 685px;
+        padding: 10px 20px 0 20px;
+    }
+
+    /* galeria  */
     .galeriaArboles {
         grid-template-columns: 1fr 1fr ;
     }
-
-
     #tarjetaA {
         grid-column: 1/2;
+    }
+    #tarjetaB {
+        grid-column: 2/3;
+    }
+    #tarjetaC {
+        grid-column: 1/2;
+    }
+    #tarjetaD {
+        grid-column: 2/3;
+    }
+    #tarjetaE {
+        grid-column: 1/2;
+    }
+    #tarjetaF {
+        grid-column: 2/3;
+    }
+
+   
+
+    /* visual  */
+    .visualE {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        height: 70%;
+        width: 2px;
+        justify-self: center;
+
+    }
+    #visualBA {
+        align-self: center;
+        left: 31%;
+        top: 10%;
+    }
+    #visualBB {
+        top: 20%;
+        right: 10%;
     }
 
 }
