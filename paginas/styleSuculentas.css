@@ -281,6 +281,7 @@
 
     /* footer  */
     footer {
+        position: static;
         width: 43px;
         grid-column: 3/4;
         grid-row: 2/3;
