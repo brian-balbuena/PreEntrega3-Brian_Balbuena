@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 30% 1fr 2fr 3fr 3fr;
+    width: 100%;
+    height: 1000px;
+    background-color: #CCF6C8;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+/* hero  */
+
+.hero {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    background-color: #FAFCC2;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+
+}
+
+.banner-banco {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    color: bisque;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.banco-promo::after {
+    content: " ";
+    position: absolute;
+    display: inline;
+    background-color: #FAFCC2;
+    width: 2px;
+    height: 15px;
+    margin-left: 5px;
+
+}
+
+.presentacion {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 55% 1fr;
+    grid-template-rows: 1fr 70%;
+}
+
+/* titulo  */
+#titulo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+
+
+#burguer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#perfil {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+
+
+/* nav  */
+
+.barra-navegacion {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: scroll;
+}
+
+.barra-navegacion div {
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+/* promo especial  */
+
+.procion-especial{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    border: solid 1.5px black;
+    border-radius: 50px;
+    margin: 5px;
+    background-image: url(./imagenes/shop/promo-diamadre.png);
+    background-color: #D7E9B9;
+    background-size: contain;
+    background-repeat: round;
+    justify-content: center;
+    align-items: center;
+}
