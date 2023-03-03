@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 20% 4fr 4fr 28% 15% 4fr;
+    grid-template-rows: 20% 4fr 4fr 28% 18% 4fr;
     width: 100%;
     row-gap: 30px;
     background-color: #CCF6C8;
@@ -85,11 +85,20 @@ h1 {
     background-color: black;
 }
 
+.nav-pills .nav-link.active {
+    background-color: #FAFCC2;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
 
 
 .offcanvas.offcanvas-start {
-    width: 45%;
-    height: 58%;
+    width: 50%;
+    height: 70%;
     position: absolute;
     display: flex;
     border-top-right-radius: 20px;
@@ -118,44 +127,58 @@ h1 {
 
 }
 
+.offcanvas-header-registro a:hover {
+    opacity: 0.6;
+}
+
+.offcanvas-header-registro a {
+    margin-top: 10px;
+}
+
+
 .offcanvas-body {
     flex-direction: column;
     padding: 0;
 }
 
+.offcanvas-body-enlaces {
+    border-bottom: solid black 2px;
+}
+
 .offcanvas-body-lista {
     list-style-type: none;
     padding: 0;
-    border-bottom: solid black 2px;
-
 }
 
-.offcanvas-body-lista li {
+#offcanvas-ayuda {
+    font-size: 0.5rem;
+    left: 50%;
+}
+
+#offcanvas-miplanta {
     margin: 10px;
     padding-left: 5px;
     background-color: #CCD6A6;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-size: 1.5rem;
+}
 
+#offcanvas-miplanta a {
+    text-decoration: none;
 }
 
 .offcanvas-body-lista li a {
     color: #5F9EA0;
 }
 
+
 .offcanvas-body-lista li:hover {
     background-color: #DAE2B6;
 }
 
-
-.offcanvas-body-enlaces {
-    height: 30%;
-}
-
 .footer-menu {
-    height: 70%;
     margin-top: 10px;
-
 }
 
 .footer-menu ul {
@@ -167,6 +190,11 @@ h1 {
     opacity: 0.6;
     font-size: 0.7rem;
 }
+
+.footer-menu ul li a:hover {
+    opacity: 0.3;
+}
+
 
 .footer-menu-logo {
     width: 100%;
@@ -453,7 +481,7 @@ h1 {
 @media screen and (min-width: 992px) {
     body {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 15% 0.6fr 4fr 10% 10%;
+        grid-template-rows: 15% 0.6fr 2fr 10% 10%;
 
     }
 
@@ -470,11 +498,19 @@ h1 {
         grid-row: 3/6;
         height: 100%;
         background-color: #FCF8EC;
+        align-items: flex-start;
+        border-right: solid black 2px;
+        display: block;
 
     }
 
     nav {
         flex-direction: column;
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin-top: 150px;
     }
 
     .offcanvas.offcanvas-start {
@@ -482,7 +518,9 @@ h1 {
         width: 25%;
         border-radius: 0;
         background-color: #FCF8EC;
-        height: 60%;
+        height: 78%;
+        border-bottom: solid black 2px;
+        border-right: solid black 2px;
     }
 
     #burguer button svg,
@@ -496,26 +534,42 @@ h1 {
         visibility: visible;
     }
 
+    .footer-menu {
+        margin-top: 30px;
+    }
 
-.footer-menu ul {
-    padding: 0;
-}
+    .footer-menu ul {
+        padding: 0;
+    }
+
     .footer-menu ul li {
-        font-size: 0.8rem;
+        margin: 10px;
+    }
+
+    .offcanvas-body {
+        justify-content: flex-start;
+    }
+
+    .offcanvas-body-enlaces {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: solid black 2px;
     }
 
     .offcanvas-body-lista li {
         font-size: 1.2rem;
     }
 
-
-    .footer-menu {
-        margin-top: 20px;
+    #offcanvas-miplanta {
+        padding: 20px;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .footer-menu ul li a {
         font-size: 1rem;
-        margin: 10px;
     }
 
     .offcanvas-header-texto {
@@ -544,11 +598,14 @@ h1 {
         justify-content: space-evenly;
     }
 
+    /* galeria  */
     .galeria {
-        grid-column: 2/5;
+        grid-column: 2/4;
         grid-row: 3/4;
     }
 
+
+    /* carrusel  */
     .carrusel {
         grid-column: 2/5;
         grid-row: 4/5;
@@ -557,6 +614,8 @@ h1 {
     .carousel-inner {
         top: 0;
     }
+
+    /* .footer */
 
     .footer {
         grid-column: 2/5;
