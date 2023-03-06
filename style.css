@@ -1,4 +1,7 @@
 /* general */
+*{
+    font-family: 'Roboto Mono', monospace;
+}
 
 body {
     position: relative;
@@ -13,7 +16,7 @@ body {
 
 
 /* barra de navegacion  */
-.barranavegacion {
+ .navbar {
     position: relative;
     display: flex;
     grid-column: 1/4;
@@ -23,40 +26,11 @@ body {
 
 }
 
-.navegacion {
-    position: absolute;
-    display: inline-block;
-    bottom: 20%;
-    right: 0%;
+#navbarSupportedContent {
+    flex-grow: 0;
+}
+form .btn {
     color: black;
-
-}
-
-
-#logomarca {
-    position: absolute;
-    left: 2%;
-    top: 30%;
-}
-
-.seccionnavbar {
-    display: inline;
-    margin: 10px;
-    z-index: 5;
-}
-
-.busqueda {
-    position: absolute;
-    display: contents;
-}
-
-.colapso {
-    display: none;
-}
-
-
-a {
-    text-decoration: none;
 }
 
 
