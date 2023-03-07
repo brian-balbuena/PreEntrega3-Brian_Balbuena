@@ -381,6 +381,11 @@
         grid-column: 2/3;
     }
 
+    #tarjetaD {
+        height: 78%;
+        width: 100%;
+    }
+
     .skillssuculentas {
         font-size: 0.8rem;
     }

@@ -412,6 +412,19 @@
         grid-column: 2/3;
     }
 
+     #tarjetaD {
+        height: 78%;
+        width: 100%;
+    } 
+    #tarjetaE {
+        height: 60%;
+        justify-self: flex-start;
+    }
+    #tarjetaF {
+        height: 70%;
+        justify-self: flex-start;
+    }
+
     .imgArboles {
         width: 100%;
         height: 100%;
