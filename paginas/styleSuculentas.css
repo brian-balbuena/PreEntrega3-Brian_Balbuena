@@ -363,13 +363,13 @@
         padding: 12%;
     }
 
-.headsuculentas {
-    font-size: 0.6rem;
-    top: -1%;
-    padding: 10px;
-    height: 670px;
-}
-    
+    .headsuculentas {
+        font-size: 0.6rem;
+        top: -1%;
+        padding: 10px;
+        height: 670px;
+    }
+
 
     /* tarjetas  */
     #tarjetaA,
@@ -379,11 +379,6 @@
     #tarjetaE,
     #tarjetaF {
         grid-column: 2/3;
-    }
-
-    #tarjetaD {
-        height: 78%;
-        width: 100%;
     }
 
     .skillssuculentas {

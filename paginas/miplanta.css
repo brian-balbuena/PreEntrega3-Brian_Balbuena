@@ -236,19 +236,23 @@
         align-items: start;
     }
 
-    footer {
-        position: static;
-        width: 43px;
+       /* footer  */
+       footer {
+        position: absolute;
         grid-column: 3/4;
         grid-row: 2/3;
         align-self: end;
         justify-self: center;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        bottom: 3%;
     }
+
     #iconosFooter {
         flex-direction: column;
         width: 40px;
+        height: 150px;
     }
+
 
 
     .miplanta {
@@ -262,21 +266,9 @@
         top: 20%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     /* visual  */
     #visualA {
-        height: 72%;
+        height: 60%;
     }
     #visualC {
         top: 10%;
@@ -286,5 +278,64 @@
         top: 32%;
         left: 44%;
     }
+
+}
+
+@media screen and (max-width: 576px) {
+
+#hero {
+    grid-template-columns: 1fr 80% 1fr;
+}
+.miplanta {
+    top: 70%;
+}
+#titulo {
+    font-size: 4rem;
+}
+
+  /* footer  */
+
+  footer {
+    right: 40%;
+}
+
+#iconosFooter img {
+    height: 35px;
+    width: 35px;
+    padding: 12%;
+}
+.controlscroll {
+    left: 39%;
+}
+
+.headsuculentas {
+    font-size: 0.6rem;
+    top: -1%;
+    padding: 10px;
+    height: 670px;
+}
+
+.collapse {
+    background-color: #fafcc2;
+    border-radius: 20px;
+}
+
+#visualA {
+    justify-self: flex-start;
+}
+#visualC {
+    grid-column: 2/3;
+    top: 18%;
+    left: 10%;
+}
+#visualB {
+    grid-column: 2/3;
+    top: 40%;
+    left: 35%;
+}
+
+#textmiplanta {
+    font-size: 1rem;
+}
 
 }

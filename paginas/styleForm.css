@@ -103,6 +103,7 @@ body {
 
     body {
         grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 70px 1.5fr 4fr;
     }
 
 #fondoAform {
