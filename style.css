@@ -33,9 +33,9 @@ form .btn {
     color: black;
 }
 
-
+/* 
 /* colapso plantas  */
-.seccionnavbar:hover #navPlanta {
+/* .seccionnavbar:hover #navPlanta {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ form .btn {
 #navPlanta li {
     padding: 0 3px 0 3px;
 
-}
+}  */
 
 /* titulos y subtitulos secciones  */
 

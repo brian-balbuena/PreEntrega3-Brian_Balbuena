@@ -24,128 +24,131 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
-      <img src="../imagenes/logo-mi_PLAN_ta.png" alt="logo de mi planta" height="80" width="80">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#planta">mi PLANta</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Plantas
-            </a>
-            <ul class="dropdown-menu opacity-75">
-              <li><a class="dropdown-item" href="../paginas/suculentas.html">Suculentas</a></li>
-              <li><a class="dropdown-item" href="../paginas/arboles.html">Árboles</a></li>
-              <li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../paginas/cuidadosgnr.html">Cuidados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../shop/shop.html">Shop</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 opacity-75" type="search" placeholder="Buscar..." aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+  
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <img src="../imagenes/logo-mi_PLAN_ta.png" alt="logo de mi planta" height="80" width="80">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#planta">mi PLANta</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Plantas
+              </a>
+              <ul class="dropdown-menu opacity-75">
+                <li><a class="dropdown-item" href="../paginas/suculentas.html">Suculentas</a></li>
+                <li><a class="dropdown-item" href="../paginas/arboles.html">Árboles</a></li>
+                <li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/cuidadosgnr.html">Cuidados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../shop/shop.html">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 opacity-75" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- presenetacion  -->
-  <section class="textform">
-    <div class="titulo">
-      <h2 id="tituloform">Mi PLANta</h2>
-    </div>
-    <div class="expliform">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum veniam modi molestiae libero in
-        ipsam perferendis eaque beatae similique tempora rem odit temporibus aperiam dicta, illo, aspernatur quam
-        facere.</p>
-    </div>
-  </section>
-  <!-- cuerpo del formulario  -->
-  <form class="formulario" method="post">
-    <div>
-      <label for="nombre"><b>Nombre</b></label>
-      <input type="text" id="nombre" name="nombre" placeholder="Nombre.." required>
-    </div>
-    <br>
-    <div>
-      <label for="edad"><b>Edad</b></label>
-      <input type="number" id="edad" name="edad" placeholder="Edad.." required>
-    </div>
-    <br>
-    <div>
-      <label for="mail"><b>Mail</b></label>
-      <input type="email" id="mail" name="mail" placeholder="Mail.." required>
-    </div>
-    <br>
-    <fieldset>
-      <legend><b>Donde vivis</b></legend>
-      <label for="casa"><b>Casa</b></label>
-      <input class="form-check-input" type="radio" name="vivienda" id="casa" >
-      <label for="departamento"><b>Departamento</b></label>
-      <input class="form-check-input" type="radio" name="vivienda" id="departamento">
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend><b>Ubicacion</b></legend>
-      <label for="interior"><b>Interior</b></label>
-      <input class="form-check-input" type="radio" name="ubicacion" id="interior" >
-      <label for="exterior"><b>Exterior</b></label>
-      <input class="form-check-input" type="radio" name="ubicacion" id="exterior">
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend><b>Proposito</b></legend>
-      <label for="huerta"><b>Huerta</b></label>
-      <input class="form-check-input" type="radio" id="huerta" name="proposito">
-      <label for="deco"><b>Deco</b></label>
-      <input class="form-check-input" type="radio" id="deco" name="proposito">
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend><b>Estacion</b></legend>
-      <label for="verano"><b>Verano</b></label>
-      <input class="form-check-input" type="radio" id="verano" name="estacion">
-      <label for="otonio"><b>Otoño</b></label>
-      <input class="form-check-input" type="radio" id="otonio" name="estacion">
-      <label for="invierno"><b>Invierno</b></label>
-      <input class="form-check-input" type="radio" id="invierno" name="estacion">
-      <label for="primavera"><b>Primavera</b></label>
-      <input class="form-check-input" type="radio" id="primavera" name="estacion">
-    </fieldset>
-    <br>
-    <div id="contcomen">
-      <label for="comentario"><b>Comentario</b></label>
-      <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje un comentario.."></textarea>
-    </div>
-    <button class="btn btn-outline-success" type="submit">Buscar recomendacion</button>
+    </nav>
+    <!-- presenetacion  -->
+    <section class="textform">
+      <div class="titulo">
+        <h2 id="tituloform">Mi PLANta</h2>
+      </div>
+      <div class="expliform">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum veniam modi molestiae libero
+          in
+          ipsam perferendis eaque beatae similique tempora rem odit temporibus aperiam dicta, illo, aspernatur quam
+          facere.</p>
+      </div>
+    </section>
+    <!-- cuerpo del formulario  -->
+    <form class="formulario" method="post">
+      <div>
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre.." required>
+      </div>
+      <br>
+      <div>
+        <label for="edad"><b>Edad</b></label>
+        <input type="number" id="edad" name="edad" placeholder="Edad.." required>
+      </div>
+      <br>
+      <div>
+        <label for="mail"><b>Mail</b></label>
+        <input type="email" id="mail" name="mail" placeholder="Mail.." required>
+      </div>
+      <br>
+      <fieldset>
+        <legend><b>Donde vivis</b></legend>
+        <label for="casa"><b>Casa</b></label>
+        <input class="form-check-input" type="radio" name="vivienda" id="casa">
+        <label for="departamento"><b>Departamento</b></label>
+        <input class="form-check-input" type="radio" name="vivienda" id="departamento">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><b>Ubicacion</b></legend>
+        <label for="interior"><b>Interior</b></label>
+        <input class="form-check-input" type="radio" name="ubicacion" id="interior">
+        <label for="exterior"><b>Exterior</b></label>
+        <input class="form-check-input" type="radio" name="ubicacion" id="exterior">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><b>Proposito</b></legend>
+        <label for="huerta"><b>Huerta</b></label>
+        <input class="form-check-input" type="radio" id="huerta" name="proposito">
+        <label for="deco"><b>Deco</b></label>
+        <input class="form-check-input" type="radio" id="deco" name="proposito">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><b>Estacion</b></legend>
+        <label for="verano"><b>Verano</b></label>
+        <input class="form-check-input" type="radio" id="verano" name="estacion">
+        <label for="otonio"><b>Otoño</b></label>
+        <input class="form-check-input" type="radio" id="otonio" name="estacion">
+        <label for="invierno"><b>Invierno</b></label>
+        <input class="form-check-input" type="radio" id="invierno" name="estacion">
+        <label for="primavera"><b>Primavera</b></label>
+        <input class="form-check-input" type="radio" id="primavera" name="estacion">
+      </fieldset>
+      <br>
+      <div id="contcomen">
+        <label for="comentario"><b>Comentario</b></label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje un comentario.."></textarea>
+      </div>
+      <button class="btn btn-outline-success" type="submit">Buscar recomendacion</button>
 
-  </form>
-  <!-- <div class="visualForm"> -->
+    </form>
+    <!-- <div class="visualForm"> -->
     <img id="fondoAform" src="../imagenes/plantas.png" alt="fondos de plantas">
-  <!-- </div> -->
-<!-- 
+    <!-- </div> -->
+    <!-- 
   <div class="visualForm"> -->
     <img id="fondoBform" src="../imagenes/fondoform.png" alt="">
-  <!-- </div> -->
+    <!-- </div> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  
 </body>
 
 </html>

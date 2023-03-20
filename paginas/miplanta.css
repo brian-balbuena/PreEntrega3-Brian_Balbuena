@@ -6,7 +6,7 @@
     left: 63%;
 } */
 
-#visualA {
+#visualA-miplanta {
     position: absolute;
     display: inline;
     grid-column: 3/4;
@@ -267,9 +267,19 @@
     }
 
     /* visual  */
-    #visualA {
-        height: 60%;
+     #visualA-miplanta {
+        display: none;
+    } 
+
+    .visualE {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        height: 70%;
+        width: 2px;
+        justify-self: center;
+
     }
+
     #visualC {
         top: 10%;
         left: 0;
@@ -320,9 +330,16 @@
     border-radius: 20px;
 }
 
-#visualA {
+ #visualA-miplanta {
+    display: none;
+} 
+
+.visualE {
     justify-self: flex-start;
+    align-self: start;
+    height: 60%;
 }
+
 #visualC {
     grid-column: 2/3;
     top: 18%;

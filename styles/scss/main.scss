@@ -1,0 +1,19 @@
+// utils 
+@import "./utils/variables";
+
+
+// base 
+@import "./base/reset";
+@import "./base/typography";
+
+
+
+// component 
+@import "./components/navBar";
+@import "./components/visuales";
+@import "./components/cards";
+
+
+// layout
+@import "./layout/footer";
+@import "./layout/gallery";
