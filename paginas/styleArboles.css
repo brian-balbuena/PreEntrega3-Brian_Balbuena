@@ -1,6 +1,6 @@
 
 
-.nomarboles {
+.hero {
     position: fixed;
     display: grid;
     width: 100%;
@@ -234,7 +234,7 @@
 @media screen and (max-width: 768px) {
 
 
-    .nomarboles {
+    .hero {
         grid-template-rows: 81px 1fr;
         grid-template-columns: 1fr 60% 1fr;
     }
@@ -336,9 +336,9 @@
 
 @media screen and (max-width: 576px) {
 
-    .nomarboles {
+    .hero {
         grid-template-columns: 1fr 70% 1fr;
-        grid-template-rows: 81px 83%;
+        grid-template-rows: 81px 86%;
     }
 
     #imgVisualArbol {

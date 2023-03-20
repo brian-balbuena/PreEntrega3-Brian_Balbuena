@@ -1,4 +1,4 @@
-.nomsuculentas {
+.hero {
     position: fixed;
     display: grid;
     width: 100%;
@@ -224,7 +224,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .nomsuculentas {
+    .hero {
         grid-template-rows: 81px 1fr;
         grid-template-columns: 1fr 60% 1fr;
     }
@@ -313,7 +313,7 @@
 @media screen and (max-width: 576px) {
 
 
-    .nomsuculentas {
+    .hero {
         grid-template-columns: 1fr 70% 1fr;
         grid-template-rows: 81px 86%;
     }
