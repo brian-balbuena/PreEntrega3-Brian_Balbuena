@@ -90,27 +90,16 @@
 
 /* nombre  */
 
-.marca {
-    position: relative;
-    /* display: block; */
+.header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.nommarca {
-    /* position: absolute;
-    display: block;
-    width: 53%;
-    height: 50%;
-    top: 20%;
-    left: 23.5%;
-    margin: auto; */
-    text-align: center;
-
-}
 
 #titulo {
     font-size: 8rem;
@@ -232,8 +221,8 @@
 
     }
 
-    .marca {
-        align-items: start;
+    .header {
+        justify-content: start;
     }
 
        /* footer  */
@@ -297,6 +286,11 @@
     grid-template-columns: 1fr 70% 1fr;
     grid-template-rows: 81px 86%;
 }
+
+.header {
+    grid-column: 1/4;
+} 
+
 .miplanta {
     top: 70%;
 }

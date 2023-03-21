@@ -8,10 +8,14 @@
     grid-template-columns: 1fr 55% 1fr;
 }
 
-.tituloCuidadosgrl {
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    text-align: center;
 }
 
 
@@ -120,13 +124,13 @@
 
 #visualCA {
     position: absolute;
-    display: inline;
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 40%;
-    height: 60%;
     justify-self: center;
     align-self: end;
+    width: 300px;
+    height: 250px;
+    top: 50%;
     transform: rotate(90deg);
 }
 
@@ -185,9 +189,9 @@
         grid-template-columns: 1fr 60% 1fr;
     }
 
-    .tituloseccion {
-        margin: 10px 0 10px 0;
-    }
+   .header {
+    justify-content: start;
+   }
 
 
     .controlscroll {
@@ -219,17 +223,7 @@
 
     }
 
-    #visualCA {
-        position: static;
-        display: inline;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 300px;
-        height: 300px;
-        justify-self: center;
-        align-self: end;
-        transform: rotate(90deg);
-    }
+    
 
     /* footer  */
     footer {
@@ -260,6 +254,10 @@
         grid-template-rows: 81px 86%;
     }
 
+    .header {
+        grid-column: 1/4;
+    }
+
     .tituloCuidadosgrl {
         grid-column: 1/4;
     }
@@ -273,7 +271,6 @@
         align-self: center;
     }
     #visualCB {
-        top: 25%;
         left: 30%;
         height: 35%;
         width: 40%;

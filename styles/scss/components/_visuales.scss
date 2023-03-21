@@ -103,9 +103,9 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
 #visualAA {
     position: absolute;
     grid-column: 2/3;
+    grid-row: 2/3;
     justify-self: end;
     align-self: center;
-    grid-row: 2/3;
     width: 200px;
     height: 250px;
     top: 20%;
@@ -270,13 +270,13 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
 // visuales cuidados generales 
 #visualCA {
     position: absolute;
-    display: inline;
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 40%;
-    height: 60%;
     justify-self: center;
     align-self: end;
+    width: 300px;
+    height: 250px;
+    top: 50%;
     transform: rotate(90deg);
 }
 
@@ -319,19 +319,7 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
     }
 }
 
-@media screen and (max-width: $tablet) {
-    #visualCA {
-        position: static;
-        display: inline;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 300px;
-        height: 300px;
-        justify-self: center;
-        align-self: end;
-        transform: rotate(90deg);
-    }
-}
+
 @media screen and (max-width: $mobile) {
     #imgVisualCuidadogrl {
         width: 80%;
@@ -342,7 +330,6 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
         align-self: center;
     }
     #visualCB {
-        top: 25%;
         left: 30%;
         height: 35%;
         width: 40%;
