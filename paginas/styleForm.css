@@ -1,5 +1,6 @@
 
-body {
+.hero-form {
+    position: relative;
     display: grid;
     grid-template-rows: 70px 1fr 4fr;
     grid-template-columns: 1fr 55% 1fr;
@@ -8,17 +9,16 @@ body {
 
 
 
-.textform {
-    grid-row: 2/3;
-    grid-column: 2/3;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     text-align: center;
-    align-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
-#tituloform {
-    margin: 0;
-    font-size: 4rem;
-}
 .expliform {
     padding: 0% 15% 0% 15%;
 }
@@ -35,11 +35,11 @@ body {
     padding: 0;
 }
 
- .formulario .btn {
+ .button-form {
     margin-top: 10px;
 }
 
-#contcomen {
+#formulario-coment{
     display: flex;
     flex-direction: column;
 }
@@ -101,7 +101,7 @@ body {
 
 @media screen and (max-width: 576px) {
 
-    body {
+    .hero-form {
         grid-template-columns: 1fr 90% 1fr;
         grid-template-rows: 70px 1.5fr 4fr;
     }
