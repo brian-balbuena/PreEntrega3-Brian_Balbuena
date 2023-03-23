@@ -1,0 +1,23 @@
+
+
+.body-suculentas {
+    @include body-page (4500px, 100%);
+
+    .body-suculentas-header {
+        @include heder-body (529px, 100%, 28%);
+        color: black;
+        font-size: 0.8rem;
+        padding: 20px;
+        opacity: 0.9;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .body-suculentas-header {
+        font-size: 0.6rem;
+        top: -1%;
+        height: 670px;
+    }
+}

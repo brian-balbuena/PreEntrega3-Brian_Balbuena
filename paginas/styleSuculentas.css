@@ -18,15 +18,17 @@
 }
 
 /* suculentas  */
-.suculentas {
+.body-suculentas {
     position: relative;
     display: block;
+    top: 55%;
+
     height: 4500px;
     width: 100%;
-    top: 55%;
+   
 }
 
-.headsuculentas {
+.body-suculentas-header {
     position: sticky;
     top: 28%;
     height: 529px;
@@ -36,28 +38,26 @@
     color: black;
     background-color: #ffffe4;
     z-index: 1;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* scroll  */
-
-.controlscroll {
+.control-scroll {
     grid-row: 3/4;
     grid-column: 2/3;
     justify-self: center;
+    align-self: center;
     opacity: .2;
 }
 
-#scrollsucu {
+.img-scroll {
     height: 50px;
     width: 50px;
 }
 
-#textscrollsucu {
+.text-croll {
     margin: 0;
 }
-
-
 
 /* galeria  */
 .galeria {
@@ -168,9 +168,9 @@
 #visualAA {
     position: absolute;
     grid-column: 2/3;
+    grid-row: 2/3;
     justify-self: end;
     align-self: center;
-    grid-row: 2/3;
     width: 200px;
     height: 250px;
     top: 20%;
@@ -238,7 +238,7 @@
 
 
     /* scrool  */
-    .controlscroll {
+    .control-scroll {
         grid-row: 2/3;
         align-self: end;
     }
@@ -365,10 +365,9 @@
         padding: 12%;
     }
 
-    .headsuculentas {
+    .body-suculentas-header {
         font-size: 0.6rem;
         top: -1%;
-        padding: 10px;
         height: 670px;
     }
 

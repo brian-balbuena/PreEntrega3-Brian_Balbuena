@@ -21,52 +21,48 @@
 
 /* arboles  */
 
-.arboles {
+.body-arboles {
     position: relative;
     display: block;
-    height: 4500px;
-    width: 100%;
     top: 55%;
+    height: 4500px;
+    width: 100%;  
 }
 
-.headarboles {
+.body-arboles-header {
     position: sticky;
     top: 28%;
     height: 529px;
+    width: 100%;
     opacity: .9;
     font-size: .8rem;
-    border-top: solid black 2px;
+    border-top: solid black 1px;
     color: black;
     background-color: #ffffe4;
+    background: linear-gradient(0deg, rgba(247,237,219,1) 0%, rgba(255,255,228,1) 100%);
+    background: linear-gradient(180deg, rgba(247,237,219,1) 
+    0%, rgba(255,255,228,1) 100%);
+    padding: 15px;
     z-index: 1;
 }
 
-/* scroll arboles  */
-
-.controlscroll {
+/* scroll  */
+.control-scroll {
     grid-row: 3/4;
     grid-column: 2/3;
     justify-self: center;
+    align-self: center;
     opacity: .2;
 }
 
-.imgScroll {
+.img-scroll {
     height: 50px;
     width: 50px;
 }
 
-.textscrollArbol {
+.text-croll {
     margin: 0;
 }
-
-#scrollB {
-    display: inline;
-    position: absolute;
-    left: 48%;
-    top: 90%;
-    opacity: .4;
-}
-
 
 /* galeria  */
 
@@ -246,7 +242,7 @@
     
 
     /* scrool  */
-    .controlscroll {
+    .control-scroll {
         grid-row: 2/3;
         align-self: end;
     }
@@ -270,16 +266,14 @@
 
 
     /* arboles  */
-    .headarboles {
+    .body-arboles-header{
         top: -1%;
         height: 685px;
-        padding: 10px 20px 0 20px;
+        padding: 20px;
         font-size: 0.7rem;
     }
 
-    #scrollB{
-        top: 89%;
-    }
+    
     /* galeria  */
     .galeria {
         grid-template-columns: 1fr 1fr ;
@@ -384,16 +378,16 @@
         padding: 12%;
     }
 
-    .headarboles {
-        font-size: 0.6rem;
-        padding: 5px 10px 0 10px;
+    .body-arboles-header {
+        font-size: 0.55rem;
+        padding: 15px;
     }
 
-    .headarboles p, ul {
+    .body-arboles-header p, ul {
         margin-bottom: 1px;
     }
 
-    .headarboles h5 {
+    .body-arboles-header h5 {
         font-size: 1rem;
     }
     /* galeria  */

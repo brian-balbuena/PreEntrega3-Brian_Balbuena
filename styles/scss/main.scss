@@ -14,6 +14,7 @@
 @import "./components/visuales";
 @import "./components/cards";
 @import "./components/button-miplanta";
+@import "./components/signal-scroll";
 
 
 // layout
@@ -21,4 +22,10 @@
 @import "./layout/gallery";
 @import "./layout/hero";
 @import "./layout/header";
+
+// page 
+@import "./pages/index";
+@import "./pages/suculentas";
+@import "./pages/arboles"; 
+@import "./pages/cuidadosGrl";
  

@@ -1,0 +1,38 @@
+
+#titulo {
+    font-size: 8rem;
+    margin: 0;
+}
+#subtitulo {
+    font-size: 1rem;
+}
+
+.body-miplanta {
+    @include body-page(675px, 100%);
+    opacity: 0.97;
+
+    .body-miplanta-header {
+        @include heder-body (100%, 100%, none);
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .body-miplanta {
+        height: 52%;
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+    #titulo {
+        font-size: 4rem;
+    }
+    #subtitulo {
+        font-size: 0.7rem;
+    }
+
+    .body-miplanta {
+        top: 70%;
+    }
+
+}
