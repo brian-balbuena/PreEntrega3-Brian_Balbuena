@@ -180,8 +180,7 @@
 
 
 /* boton miplanta  */
-#botonmiplanta {
-    width: 130px;
+.boton-miplanta {
     height: 50px;
     border-radius: 10px;
     font-size: 1.5rem;
@@ -192,7 +191,7 @@
 
 }
 
-#botonmiplanta:hover {
+.boton-miplanta:hover {
     color: #AAA492;
 }
 

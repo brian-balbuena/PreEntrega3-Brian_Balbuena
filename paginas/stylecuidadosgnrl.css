@@ -82,6 +82,23 @@
     font-size: 1.5rem;
 }
 
+/* boton miplanta  */
+.boton-miplanta {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    ;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.boton-miplanta:hover {
+    color: #AAA492;
+}
+
+
 /* consejos generales  */
 
 .tarjetascuidgrl ul {
