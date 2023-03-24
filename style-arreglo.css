@@ -1,4 +1,4 @@
-body {
+.arreglo {
     height: 750px;
     height: 750px;
     display: flex;
@@ -6,7 +6,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hero {
+.hero-arreglo {
     flex-direction: column;
     justify-content: center;
     border: solid 1px black;
