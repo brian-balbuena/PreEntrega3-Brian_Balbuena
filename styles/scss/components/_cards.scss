@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
 
-        .img {
+        img {
             height: 250px;
             width: 250px;
             border-radius: 15px;
@@ -52,7 +52,7 @@
 }
 
 @for $i from 1 through 6 {
-    .tarjeta-#{$i} {
+    #tarjeta-#{$i} {
         grid-row: #{$i} / ($i+1);
         grid-column: #{$i+1} / ($i+2);
 
@@ -69,13 +69,17 @@
 
 @media screen and (max-width: $tablet) {
 
+    .tarjeta {
+        height: 100%;
+    }
+
     @for $i from 1 through 6 {
         @if ($i % 2)==0 {
-            .tarjeta-#{$i} {
+            #tarjeta-#{$i} {
                 grid-column: 2/3;
             }
         }@else {
-            .tarjeta-#{$i} {
+            #tarjeta-#{$i} {
                 grid-column: 1/2;
             }
         }
@@ -85,7 +89,7 @@
 @media screen and (max-width: $mobile) {
 
     @for $i from 1 through 6 {
-        .tarjeta-#{$i} {
+        #tarjeta-#{$i} {
             grid-column: 2/3;
         }
     }

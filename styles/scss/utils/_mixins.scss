@@ -22,6 +22,9 @@
 // heder body page 
 @mixin heder-body ($height, $width, $top){
     position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: $height;
     width: $width;
     top: $top;

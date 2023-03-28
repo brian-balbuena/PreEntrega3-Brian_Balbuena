@@ -77,6 +77,13 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
     left: 80%;
 
 }
+#imgVisualCmiplanta {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
 
 @keyframes moveimg-home {
     0% {
@@ -314,7 +321,6 @@ $borde-visual-100: 34% 64% 77% 26% / 73% 54% 45% 19%;
 }
 @media screen and (max-width: $mobile) {
     #imgVisualArbol {
-        width: 80%;
         height: 80%;
     }
     #visualBA {

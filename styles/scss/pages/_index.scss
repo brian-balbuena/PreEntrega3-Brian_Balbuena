@@ -28,6 +28,10 @@
     color: black;
 }
 
+#header-miplanta {
+    justify-content: center;
+}
+
 @media screen and (max-width: $tablet) {
     .body-miplanta {
         height: 52%;
@@ -36,6 +40,9 @@
         width: 80%;
         left: 10%;
         top: 20%;
+    }
+    #header-miplanta {
+        justify-content: start;
     }
 }
 
@@ -52,5 +59,8 @@
     .body-miplanta {
         top: 70%;
     }
+    .header {
+        grid-column: 1/4;
+    } 
 
 }

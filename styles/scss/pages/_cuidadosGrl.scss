@@ -1,16 +1,14 @@
-
-
 .body-cuidGrl {
-    @include body-page (none , none);
+    @include body-page (none, none);
     z-index: 1;
     font-size: 1.3rem;
     opacity: 0.97;
 
     .body-cuidGrl-header {
-        @include heder-body (750px, 100%, -1% );
+        @include heder-body (750px, 100%, -1%);
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 200px;    
+        margin-bottom: 200px;
         text-align: center;
     }
 }
@@ -31,17 +29,21 @@
             text-align: center;
             font-size: 2rem;
         }
+
         .tarjetas-cuidgr-img {
             height: 350px;
             width: 350px;
             float: left;
             margin: 10px;
             border-radius: 20px;
-            box-shadow: -10px 10px 10px 0px rgba(0,0,0,0.5);
+            box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.5);
             opacity: 1;
         }
-        .tarjetas-cuidgrl li {
-            list-style: none;
+
+        ul {
+            li {
+                list-style: none;
+            }
         }
     }
 }
@@ -50,28 +52,40 @@
 
 
 @media screen and (max-width: $tablet) {
-    .body-cuidGrl-header {
-        top: 0%;
+    .body-cuidGrl {
+        
+        .body-cuidGrl-header {
+            top: 0%;
+        }
     }
+
+
 }
 
 @media screen and (max-width: $mobile) {
-    .body-cuidGrl-header {
-        font-size: 0.73rem;
-        padding-top: 50px;
-        justify-content: flex-start;
-    }
-
-    .tarjetas-cuidgrl {
-        text-align: center;
-
-        .tarjetas-cuidgr-img {
-            width: 90%;
-            height: 90%;
-            float: none;
-        }
-        .tarjetas-cuidgrl p {
-            padding-top: 10px;
+    .body-cuidGrl {
+        .body-cuidGrl-header {
+            font-size: 1rem;
+            padding-top: 50px;
+            justify-content: flex-start;
         }
     }
+
+    .conse-cuidgrl {
+        font-size: 0.9rem;
+        .tarjetas-cuidgrl {
+            text-align: center;
+
+            .tarjetas-cuidgr-img {
+                width: 90%;
+                height: 90%;
+                float: none;
+            }
+
+            .tarjetas-cuidgrl p {
+                padding-top: 10px;
+            }
+        }
+    }
+
 }

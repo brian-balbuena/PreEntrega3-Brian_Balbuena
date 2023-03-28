@@ -92,6 +92,7 @@
 
                         .offcanvas-header-registro {
                             color: #5F9EA0;
+                            font-size: 0.8rem;
 
                             & a:hover {
                                 opacity: 0.6;
@@ -169,6 +170,18 @@
                                 width: 100%;
                                 justify-content: space-around;
                                 margin-top: 10px;
+                                .logo-facebook {
+                                    color: #4267B2;
+                                }
+                                .logo-twitter {
+                                    color: #1DA1F2;
+                                }
+                                .logo-instagram {
+                                   background: linear-gradient(45deg, #405de6, #5851db, #833ab4,
+                                    #c13584, #e1306c, #fd1d1d);
+                                    color: whitesmoke;
+                                    border-radius: 10px;
+                                }
                             }
 
                         }
@@ -210,14 +223,18 @@
 
         .nav {
             flex-wrap: nowrap;
-
-            .nav-pills .nav-link.active {
-                background-color: #FAFCC2;
+            a {
                 color: black;
-
-                .nav-link {
+            }
+            
+                .nav-link.active {
+                    background-color: #FAFCC2;
                     color: black;
-                }
+    
+                    .nav-link {
+                        color: black;
+                    }
+             
             }
         }
     }
@@ -233,7 +250,7 @@
         border-bottom: solid 1.5px black;
         border-top: solid 1.5px black;
         margin: 5px;
-        background-image: url(../imagenes/shop/promo-diamadre.png);
+        background-image: url(../../imagenes/shop/promo-diamadre.png);
         background-position: center;
         background-color: #D7E9B9;
         background-size: contain;
@@ -370,8 +387,18 @@
             justify-content: space-between;
             padding: 5px 0 5px 0;
 
-            & svg {
-                color: white;
+        
+            .logo-facebook {
+                color: #4267B2;
+            }
+            .logo-twitter {
+                color: #1DA1F2;
+            }
+            .logo-instagram {
+               background: linear-gradient(45deg, #405de6, #5851db, #833ab4,
+                #c13584, #e1306c, #fd1d1d);
+                color: whitesmoke;
+                border-radius: 10px;
             }
         }
 
@@ -387,11 +414,11 @@
             & a {
                 color: #92BA92;
                 margin-top: 10px;
-            
+
                 &:hover {
                     opacity: 0.6;
                 }
-            } 
+            }
         }
 
         .footer-copyright {
@@ -402,10 +429,10 @@
             padding-top: 20px;
             color: white;
             opacity: .6;
-        } 
+        }
     }
 
-    
+
 
 }
 
@@ -421,12 +448,30 @@
         max-width: 540px;
     }
 
+    .shop {
+        .hero-shop {
+            .presentacion {
+                #burguer {
+                    .offcanvas.offcanvas-start {
+                        .offcanvas-header {
+                            .offcanvas-header-texto {
+                                align-self: center;
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 992px) {
     .shop {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 15% 0.6fr 2fr 12% 21%;
+        grid-template-rows: 15% 0.6fr 2fr 13% 21%;
 
         .hero-shop {
             grid-column: 2/5;
@@ -441,16 +486,28 @@
             display: none;
         }
 
-        .offcanvas.offcanvas-start {
-            transform: translateX(0);
-            width: 25%;
-            border-radius: 0;
-            height: 78%;
-            border-bottom: solid black 1px;
-            border-right: solid black 1px;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%,
-                    rgba(250, 252, 194, 1) 50%, rgba(253, 254, 227, 1) 90%);
+        .hero-shop {
+            .presentacion {
+                #burguer {
+                    .offcanvas.offcanvas-start {
+                        transform: translateX(0);
+                        width: 25%;
+                        border-radius: 0;
+                        height: 35%;
+                        border-bottom: solid black 1px;
+                        border-right: solid black 1px;
+                        background: linear-gradient(90deg, rgba(255,255,255,1) 0%,
+                         rgba(247,237,219,1) 50%, rgba(255,255,255,1) 100%);
+                    }
+                }
+            }
+
         }
+
+
+
+
+
 
         .offcanvas {
             visibility: visible;
@@ -514,8 +571,8 @@
             grid-column: 1/2;
             grid-row: 3/6;
             height: 100%;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%,
-                    rgba(250, 252, 194, 1) 50%, rgba(253, 254, 227, 1) 90%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%,
+             rgba(247, 237, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
             align-items: flex-start;
             border-right: solid black 1px;
             display: flex;
@@ -569,15 +626,15 @@
                 flex-direction: row;
                 justify-content: space-evenly;
             }
-            
+
             .footer-terminos {
                 font-size: 1rem;
                 flex-wrap: wrap;
                 align-content: flex-end;
             }
         }
-    
 
     }
+
 
 }
