@@ -22,9 +22,18 @@
         .button-form {
             margin-top: 10px;
         }
+
+        .form-check-input:checked {
+            background-color: green;
+            border-color: green;
+        }
         #formulario-coment{
             display: flex;
             flex-direction: column;
+        }
+
+        .formulario-datos {
+            border-radius: 5px;
         }
     }
 }

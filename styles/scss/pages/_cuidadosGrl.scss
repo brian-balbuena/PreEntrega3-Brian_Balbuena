@@ -1,7 +1,7 @@
 .body-cuidGrl {
     @include body-page (none, none);
     z-index: 1;
-    font-size: 1.3rem;
+    font-size: 1rem;
     opacity: 0.97;
 
     .body-cuidGrl-header {
@@ -65,14 +65,14 @@
 @media screen and (max-width: $mobile) {
     .body-cuidGrl {
         .body-cuidGrl-header {
-            font-size: 1rem;
+            font-size: 0.8rem;
             padding-top: 50px;
             justify-content: flex-start;
         }
     }
 
     .conse-cuidgrl {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         .tarjetas-cuidgrl {
             text-align: center;
 

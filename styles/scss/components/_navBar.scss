@@ -22,6 +22,11 @@
     .form-control {
         padding-left: 20px;
     }
+
+    .collapse {
+        background-color: #fafcc2;
+        border-radius: 20px;
+    }
 }
 @media screen and (max-width: $mobile) {
     .collapse {
